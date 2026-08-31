@@ -18,7 +18,7 @@ $result = $pdo->query("SELECT * FROM `people`")
 <?php if ($city): ?><p>you are from <?php echo $city ?></p><?php endif ?>
 <h2>data fra people table</h2>
 <?php foreach($result as $row): ?>
-<p><?php echo $row["name"] ?></p>
+<p><?php echo $row["username"] ?></p>
 <p><?php echo $row["age"] ?></p>
 <p><?php echo $row["city"] ?></p>
 <?php endforeach ?>
