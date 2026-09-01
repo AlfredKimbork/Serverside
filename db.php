@@ -11,7 +11,6 @@ try {
     $username,
     $password,
   );
-  echo "connected successfully";
 } catch (PDOException $error) {
   echo "error: " . $error;
 }

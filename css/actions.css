@@ -1,0 +1,105 @@
+/* Actions */
+
+.actions {
+  position: absolute;
+
+  top: 16px;
+  right: 16px;
+}
+
+.actions-toggle {
+  width: 38px;
+  height: 38px;
+
+  padding: 0;
+
+  display: grid;
+  place-items: center;
+
+  background: white;
+  color: var(--black);
+
+  font-size: 24px;
+  line-height: 1;
+
+  box-shadow: 3px 3px 0 var(--black);
+}
+
+.actions-toggle:hover {
+  background: var(--yellow);
+}
+
+.actions-menu {
+  position: absolute;
+
+  right: 0;
+  top: 45px;
+
+  width: 130px;
+
+  background: white;
+
+  border: var(--border);
+  box-shadow: 5px 5px 0 var(--black);
+
+  opacity: 0;
+  visibility: hidden;
+
+  transform:
+    translateX(15px)
+    scale(0.95);
+
+  transform-origin: top right;
+
+  transition:
+    opacity 120ms ease,
+    transform 120ms ease,
+    visibility 120ms ease;
+
+  z-index: 20;
+}
+
+.actions-menu.open {
+  opacity: 1;
+  visibility: visible;
+
+  transform:
+    translateX(0)
+    scale(1);
+}
+
+.actions-menu a,
+.actions-menu button {
+  display: block;
+
+  width: 100%;
+
+  border: 0;
+  border-bottom: 2px solid var(--black);
+
+  box-shadow: none;
+
+  background: white;
+  color: var(--black);
+
+  padding: 12px;
+
+  text-align: left;
+
+  font-size: 14px;
+  font-weight: 1000;
+
+  text-decoration: none;
+}
+
+.actions-menu a:hover {
+  background: var(--blue);
+}
+
+.actions-menu .delete {
+  border-bottom: 0;
+}
+
+.actions-menu .delete:hover {
+  background: #ff5c5c;
+}
