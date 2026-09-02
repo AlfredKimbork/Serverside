@@ -214,6 +214,7 @@ button:active {
 }
 
 .person:hover {
+  border: var(--border);
   transform: translate(-4px, -4px);
   z-index: 2;
 
